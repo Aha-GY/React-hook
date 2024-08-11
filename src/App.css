@@ -1,0 +1,47 @@
+#root {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+  background-color: #f7f2f2; /* Light gray background */
+}
+
+label {
+  font-weight: bold;
+  display: flex;
+  margin-bottom: 5px;
+  color: #141414; /* Dark gray label text */
+}
+
+input[type="text"],
+input[type="email"],
+input[type="number"],
+input[type="date"] {
+  display: block;
+  width: 400px;
+  padding: 6px 12px;
+  font-size: 14px;
+  line-height: 1.42857143;
+  background-color: #f3e4e4; /* White background */
+  border: 1px solid #1a7feb; /* Blue border */
+  border-radius: 4px;
+  color: #3f3f3f; /* Dark gray input text */
+}
+
+input[type="text"]:focus,
+input[type="email"]:focus,
+input[type="number"]:focus,
+input[type="date"]:focus {
+  border-color: #0056b3; /* Darker blue border on focus */
+  outline: none;
+}
+
+.error {
+  color: #dc3545; /* Red error text */
+  font-size: 12px;
+  text-align: left;
+}
+
+.form-control {
+  margin-bottom: 20px;
+}
