@@ -17,17 +17,17 @@ export const YouTubeForm = () => {
 
   return (
     <div>
-      <h1>YouTube Form</h1>
+      <h1>Contact Form </h1>
       <form onSubmit={handleSubmit(onSubmit)} noValidate>
-        <label htmlFor="username">Username</label>
+        <label htmlFor="Name">Name</label>
         <input
           type="text"
           id="username"
           {...register("username", {
-            required: "Username is required",
+            required: "name is required",
             validate: (value) => 
               value.includes("admin")
-                ? "Username cannot contain 'admin'"
+                ? "name cannot contain 'admin'"
                 : true,
           })}
         />
@@ -47,21 +47,21 @@ export const YouTubeForm = () => {
         />
         {errors.email && <p>{errors.email.message}</p>}
 
-        <label htmlFor="channel">Channel</label>
+        <label htmlFor="Message">Message </label>
         <input
           type="text"
           id="channel"
           {...register("channel", {
-            required: "Channel name is required",
+            required: " Message  is required",
             validate: {
               noSpace: (value) =>
                 value.trim() !== value
-                  ? "Channel name cannot start or end with a space"
+                  ? "Message  cannot start or end with a space"
                   : true,
               minLength: (value) =>
                 value.length >= 5
                   ? true
-                  : "Channel name must be at least 5 characters long",
+                  : "Message  must be at least 5 characters long",
             },
           })}
         />

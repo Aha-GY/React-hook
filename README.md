@@ -5,7 +5,8 @@ This project demonstrates creating a form using React and TypeScript, showcasing
 
 - Form Validation
 - Form Submission
-- Form State Management using the          - react-hook-form` library
+- Form State Management using the   
+- react-hook-form` library
 
 ### The form includes the following fields:
 
@@ -43,17 +44,25 @@ This project demonstrates creating a form using React and TypeScript, showcasing
 
 
 The Form
-![alt text](image.png)
+
+![alt text](image-5.png)
 
 Form validation 
 
-![alt text](image-1.png)
+![alt text](image-6.png)
+
 
 Validation for invalid email
-![alt text](image-2.png)
+
+![alt text](image-7.png)
+
 
 Error message removed after entering valid data
-![alt text](image-3.png)
-Responsive design
-![alt text](image-4.png)
 
+![alt text](image-1.png)
+
+
+Responsive design
+
+
+![alt text](image-2.png)
